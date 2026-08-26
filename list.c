@@ -28,9 +28,24 @@ Node* insert(Node* head, int data){
 }
 
 void display(Node* head){
-    
+    Node* temp = head;
+    if(temp == NULL){
+        printf("Empty List");
+        exit(1);
+    }
+
+    while(temp!=NULL){
+        printf("%d -> ", temp->data);
+        temp = temp->next;
+    }
+    printf("NULL\n");
 }
 
 void free(Node* head){
-    
+    Node* temp;
+    while(head!=NULL){
+        temp = head;
+        head = head->next;
+        free(temp);
+    }
 }
