@@ -1,5 +1,5 @@
 #ifndef LIST_H
-#include LIST_H
+#define LIST_H
 
 typedef struct Node{
     int data;
@@ -9,6 +9,6 @@ typedef struct Node{
 Node* create_node(int data);
 Node* insert(Node* head, int data);
 void display(Node* head);
-void free(Node* head);
+void free_list(Node* head);
 
 #endif

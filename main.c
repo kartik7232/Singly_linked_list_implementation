@@ -11,7 +11,7 @@ int main() {
     printf("Linked list: ");
     display(head);
 
-    free(head);
+    free_list(head);
     head = NULL;
     return 0;
 }

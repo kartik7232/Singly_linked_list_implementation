@@ -41,7 +41,7 @@ void display(Node* head){
     printf("NULL\n");
 }
 
-void free(Node* head){
+void free_list(Node* head){
     Node* temp;
     while(head!=NULL){
         temp = head;
